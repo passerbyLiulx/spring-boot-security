@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 public class LoginController {
 
     @PostMapping("login")
-    public R login() {
+    public R login(@RequestParam String username, @RequestParam String password) {
         return R.ok().data("token","admin");
     }
 
