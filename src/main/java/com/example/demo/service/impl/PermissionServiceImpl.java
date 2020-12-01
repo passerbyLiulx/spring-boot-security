@@ -124,7 +124,7 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
     public List<JSONObject> selectPermissionByUserId(String userId) {
         List<Permission> selectPermissionList = null;
         if(this.isSysAdmin(userId)) {
-            //如果是超级管理员，获取所有菜单
+            // 如果是超级管理员，获取所有菜单
             selectPermissionList = baseMapper.selectList(null);
         } else {
             selectPermissionList = baseMapper.selectPermissionByUserId(userId);

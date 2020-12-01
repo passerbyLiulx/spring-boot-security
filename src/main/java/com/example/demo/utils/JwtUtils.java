@@ -1,4 +1,4 @@
-package com.atguigu.commonutils;
+package com.example.demo.utils;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;

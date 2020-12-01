@@ -1,4 +1,4 @@
-package com.atguigu.commonutils;
+package com.example.demo.utils;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
