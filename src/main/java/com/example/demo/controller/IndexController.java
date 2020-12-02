@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/admin/acl/index")
+@RequestMapping("/acl/index")
 public class IndexController {
 
     @Autowired
@@ -40,10 +40,4 @@ public class IndexController {
         List<JSONObject> permissionList = indexService.getMenu(username);
         return R.ok().data("permissionList", permissionList);
     }
-
-    @PostMapping("logout")
-    public R logout(){
-        return R.ok();
-    }
-
 }

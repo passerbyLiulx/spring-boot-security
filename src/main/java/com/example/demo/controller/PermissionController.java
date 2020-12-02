@@ -13,7 +13,7 @@ import java.util.List;
  * 权限 菜单管理
  */
 @RestController
-@RequestMapping("/admin/acl/permission")
+@RequestMapping("/acl/permission")
 public class PermissionController {
 
     @Autowired

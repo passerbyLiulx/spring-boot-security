@@ -1,13 +1,13 @@
 package com.example.demo.controller;
 
 
-import com.atguigu.commonutils.MD5;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.demo.dao.User;
 import com.example.demo.service.RoleService;
 import com.example.demo.service.UserService;
+import com.example.demo.utils.MD5;
 import com.example.demo.utils.R;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -22,7 +22,7 @@ import java.util.Map;
  * 用户 前端控制器
  */
 @RestController
-@RequestMapping("/admin/acl/user")
+@RequestMapping("/acl/user")
 public class UserController {
 
     @Autowired

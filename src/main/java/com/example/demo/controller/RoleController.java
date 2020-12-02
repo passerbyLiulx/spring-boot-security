@@ -18,7 +18,7 @@ import java.util.List;
  * 角色 前端控制器
  */
 @RestController
-@RequestMapping("/admin/acl/role")
+@RequestMapping("/acl/role")
 public class RoleController {
 
     @Autowired

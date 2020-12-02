@@ -10,7 +10,7 @@ import org.springframework.util.StringUtils;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 
-public class JwtUtils {
+public class JwtUtils1 {
 
     //常量
     public static final long EXPIRE = 1000 * 60 * 60 * 24; //token过期时间

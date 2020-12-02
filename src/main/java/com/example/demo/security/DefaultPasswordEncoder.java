@@ -1,6 +1,6 @@
 package com.example.demo.security;
 
-import com.atguigu.commonutils.MD5;
+import com.example.demo.utils.MD5;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 

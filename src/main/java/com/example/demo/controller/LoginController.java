@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.filter.TokenAuthenticationFilter;
 import com.example.demo.utils.R;
 import org.springframework.web.bind.annotation.*;
 
@@ -8,12 +9,13 @@ public class LoginController {
 
     @PostMapping("login")
     public R login(@RequestParam String username, @RequestParam String password) {
+        TokenAuthenticationFilter tokenAuthenticationFilter = new TokenAuthenticationFilter();
 
-        return R.ok().data("token","admin");
+        return R.ok().data("token","token");
     }
 
-    @GetMapping("info")
-    public R info() {
-        return R.ok().data("roles","[admin]").data("name","admin").data("avatar","https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif");
+    @PostMapping("logout")
+    public R logout(){
+        return R.ok();
     }
 }
