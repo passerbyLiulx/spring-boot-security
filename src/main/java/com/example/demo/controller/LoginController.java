@@ -9,8 +9,6 @@ public class LoginController {
 
     @PostMapping("login")
     public R login(@RequestParam String username, @RequestParam String password) {
-        TokenAuthenticationFilter tokenAuthenticationFilter = new TokenAuthenticationFilter();
-
         return R.ok().data("token","token");
     }
 
